@@ -9,9 +9,5 @@ express()
   .set('views', path.join(__dirname, 'views'))
   .set('view engine', 'ejs')
   .get('/', (req, res) => res.render('pages/index'))
-<<<<<<< HEAD
-  .get('/coosl', (req, res) => res.send(cool()))
-=======
-  .get('/cools', (req, res) => res.send(cool()))
->>>>>>> 3b3ce8de7f79a666a2ad1ec7eae85f4be2ea3101
+  .get('/cool', (req, res) => res.send(cool()))
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
